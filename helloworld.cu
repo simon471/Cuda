@@ -2,11 +2,11 @@
 #include "cuda.h"
 #include "device_launch_parameters.h"
 #include "stdio.h"
-#include <iostream>
+
 using namespace std;
 
 __global__ void mykernel() {
-	cout << "HelloWorld!" << endl;
+	printf("Hello World!");
 }
 
 int main(){
